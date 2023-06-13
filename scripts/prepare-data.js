@@ -238,9 +238,8 @@ async function main() {
         let rank = getPillarRank(countryName, next);
         let multivariable = getUniqueSubpillarCount(countryName, next); 
         let divisionVariable = countUniqueSubpillars(next);
-        let dividedRank = score * multivariable;
-        let final_score = score;
-        //let final_score = dividedRank / divisionVariable ;
+        let dividedRank = score * multivariable;        
+        let final_score = dividedRank / divisionVariable ;
         acc[next] = {
           rank,
           score: roundNumber(parseFloat(final_score), 2),
