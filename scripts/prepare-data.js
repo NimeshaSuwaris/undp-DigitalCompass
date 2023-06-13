@@ -12,7 +12,7 @@ const GEOJSON_FILE = path.join(RAW_DATABASE_DIR, "country-geojson.json");
 const COUNTRIES_FILE = path.join(RAW_DATABASE_DIR, "countries-manifest.csv");
 const SCORES_FILE = path.join(RAW_DATABASE_DIR, "scores.csv");
 const LATLON_FILE = path.join(RAW_DATABASE_DIR, "latlon.json");
-
+ 
 // Used to trim down what we pass down to the client
 const COUNTRY_PROPERTIES = [
   "Country or Area",
@@ -239,7 +239,8 @@ async function main() {
         let multivariable = getUniqueSubpillarCount(countryName, next); 
         let divisionVariable = countUniqueSubpillars(next);
         let dividedRank = score * multivariable;
-        let final_score = dividedRank / divisionVariable ;
+        let final_score = score;
+        //let final_score = dividedRank / divisionVariable ;
         acc[next] = {
           rank,
           score: roundNumber(parseFloat(final_score), 2),
