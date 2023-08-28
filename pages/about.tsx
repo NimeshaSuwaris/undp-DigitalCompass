@@ -332,7 +332,7 @@ const TablePillar = ({
     .range([pillarColors.triple[1], pillarColors.triple[2]])
     .interpolate(interpolateHclLong)
     .clamp(true);
-  let pillarIcon = Icons[pillar.toLowerCase() as keyof typeof Icons];
+  let pillarIcon = Icons[pillar.toLowerCase().split(" ").join("") as keyof typeof Icons];
   const overall = definitions[0];
 
   return (
