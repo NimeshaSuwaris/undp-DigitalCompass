@@ -21,7 +21,7 @@ export default function Sandbox(
             <StageGauge
               name={country["Country or Area"]}
               scores={country.scores}
-              definitions={definitions["Business"]}
+              definitions={definitions["Economy"]}
               pillar="Overall"
             />
             <StageGauge
@@ -39,7 +39,7 @@ export default function Sandbox(
             <StageGauge
               name={country["Country or Area"]}
               scores={country.scores}
-              definitions={definitions["Digital Public Infrastructure"]}
+              definitions={definitions["DPInfrastructure"]}
               pillar="Digital Public Infrastructure"
             />
             <StageGauge
