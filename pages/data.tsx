@@ -102,7 +102,7 @@ export default function Data(
   >({
     Economy: undefined,
     Government: undefined,
-    DPInfrastrucuture: undefined,
+    DPInfrastructure: undefined,
     Connectivity: undefined,
     People: undefined,
     Regulation: undefined,
@@ -264,8 +264,8 @@ export default function Data(
       .filter((datum) => {
         return filterPillarByRange(
           datum,
-          "DPInfrastrucuture",
-          scoreFilter.DPInfrastrucuture
+          "DPInfrastructure",
+          scoreFilter.DPInfrastructure
         );
       })
       .filter((datum) => {
@@ -314,7 +314,7 @@ export default function Data(
   }, [data]);
 
   const foundationsScores = useMemo(() => {
-    return data.map((datum) => datum.scores["DPInfrastrucuture"].score || 0);
+    return data.map((datum) => datum.scores["DPInfrastructure"].score || 0);
   }, [data]);
 
   const governmentScores = useMemo(() => {
@@ -525,12 +525,12 @@ export default function Data(
                 onChange={(value) =>
                   setScoreFilter((curr) => ({
                     ...curr,
-                    DPInfrastrucuture: value,
+                    DPInfrastructure: value,
                   }))
                 }
-                label="DPInfrastrucuture Score"
+                label="DPInfrastructure Score"
                 data={foundationsScores}
-                value={scoreFilter.DPInfrastrucuture}
+                value={scoreFilter.DPInfrastructure}
               />
               <HistogramRangeInput
                 onChange={(value) =>
