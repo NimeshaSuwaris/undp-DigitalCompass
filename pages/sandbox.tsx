@@ -27,8 +27,8 @@ export default function Sandbox(
             <StageGauge
               name={country["Country or Area"]}
               scores={country.scores}
-              definitions={definitions["Business"]}
-              pillar="Business"
+              definitions={definitions["Economy"]}
+              pillar="Economy"
             />
             <StageGauge
               name={country["Country or Area"]}
@@ -39,26 +39,20 @@ export default function Sandbox(
             <StageGauge
               name={country["Country or Area"]}
               scores={country.scores}
-              definitions={definitions["Foundations"]}
-              pillar="Foundations"
+              definitions={definitions["Digital Public Infrastructure"]}
+              pillar="Digital Public Infrastructure"
             />
             <StageGauge
               name={country["Country or Area"]}
               scores={country.scores}
-              definitions={definitions["Infrastructure"]}
-              pillar="Infrastructure"
+              definitions={definitions["Connectivity"]}
+              pillar="Connectivity"
             />
             <StageGauge
               name={country["Country or Area"]}
               scores={country.scores}
               definitions={definitions["People"]}
               pillar="People"
-            />
-            <StageGauge
-              name={country["Country or Area"]}
-              scores={country.scores}
-              definitions={definitions["Strategy"]}
-              pillar="Strategy"
             />
             <StageGauge
               name={country["Country or Area"]}
