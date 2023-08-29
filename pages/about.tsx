@@ -126,7 +126,7 @@ export default function About(
               Stages of Digital Readiness by Transformation Pillar
             </h2>
           </div>
-
+          
           <TablePillars pillars={pillars} definitions={definitions} />
           <MobilePillars pillars={pillars} definitions={definitions} />
 
