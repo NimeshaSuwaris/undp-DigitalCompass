@@ -175,7 +175,8 @@ async function main() {
     const definition =
       definitions.find((d) => !d["Pillar"] && !d["Sub-Pillar"]) || "";
     const stageInfo = definition[stageName];
-    console.log(stageInfo)
+    //console.log(stage)
+    //console.log(stageName)
     if (!stageInfo) return null;
     return {
       number: stage,
