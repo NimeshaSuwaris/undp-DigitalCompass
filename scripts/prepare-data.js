@@ -151,8 +151,7 @@ async function main() {
       return (
         score["Country Name"] === country &&
         !Boolean(score["Sub-Pillar"]) &&
-        !Boolean(score["Pillar"]),
-        definitions
+        !Boolean(score["Pillar"])
       );
     });
 
