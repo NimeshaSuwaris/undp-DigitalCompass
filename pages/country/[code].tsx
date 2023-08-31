@@ -4,7 +4,7 @@ import Layout from "components/Layout";
 import { Pillars } from "components/pillar";
 import { RelatedCountryList } from "components/related-country-list";
 import { ScoreRing } from "components/score-ring";
-import { Toggle } from "components/toggle";
+import { Toggle } from "components/toggle"; 
 import { db } from "database";
 import { ancillary } from "database/ancillary";
 import { Country, Definition } from "database/processed/db";

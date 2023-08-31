@@ -18,7 +18,7 @@ const tweakColor = (color: string) => {
   d3Color.c -= 0.01;
   d3Color.h -= 3;
   return d3Color.toString();
-};
+}; 
 export const ScoreRing = ({
   country,
   pillars: pillarData,
