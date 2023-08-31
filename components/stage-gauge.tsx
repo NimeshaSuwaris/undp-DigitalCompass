@@ -23,7 +23,8 @@ interface Stage {
 function InnerStageGauge(props: StageGaugeProps) {
   const { scores, pillar, definitions, name } = props;
   const [activeSubpillar, setActiveSubpillar] = useState<Stage | null>(null);
-
+  console.log("inner scores : ",scores)
+  console.log("inner activesubpilar : ",activeSubpillar)
   const overallStageInfo = scores[pillar].stage;
 
   let primaryColor = pillarColorMap[pillar].base;
@@ -280,7 +281,8 @@ export function OverallStageGauge(props: OverallStageGaugeProps) {
   const { scores, name } = props;
   const [activePillar, setActivePillar] = useState<Pillar>("Overall");
   const stageInfo = scores[activePillar]?.stage;
-
+  console.log("inner scores : ",scores)
+  console.log("inner activepilar : ",activePillar)
   let offset = 4;
   let size = 250;
   let ringSize = size / 4;
