@@ -309,11 +309,11 @@ export default function Data(
     );
   }, [sortColumns, maybeFilteredRows]);
 
-  const businessScores = useMemo(() => {
+  const economyScores = useMemo(() => {
     return data.map((datum) => datum.scores["Economy"].score || 0);
   }, [data]);
 
-  const foundationsScores = useMemo(() => {
+  const dpinfrastructureScores = useMemo(() => {
     return data.map((datum) => datum.scores["DPInfrastructure"].score || 0);
   }, [data]);
 
@@ -321,7 +321,7 @@ export default function Data(
     return data.map((datum) => datum.scores["Government"].score || 0);
   }, [data]);
 
-  const infrastructureScores = useMemo(() => {
+  const connectivityScores = useMemo(() => {
     return data.map((datum) => datum.scores["Connectivity"].score || 0);
   }, [data]);
 
@@ -518,7 +518,7 @@ export default function Data(
                   }))
                 }
                 label="Economy Score"
-                data={businessScores}
+                data={economyScores}
                 value={scoreFilter.Economy}
               />
               <HistogramRangeInput
@@ -529,7 +529,7 @@ export default function Data(
                   }))
                 }
                 label="DPInfrastructure Score"
-                data={foundationsScores}
+                data={dpinfrastructureScores}
                 value={scoreFilter.DPInfrastructure}
               />
               <HistogramRangeInput
@@ -551,7 +551,7 @@ export default function Data(
                   }))
                 }
                 label="Connectivity Score"
-                data={infrastructureScores}
+                data={connectivityScores}
                 value={scoreFilter.Connectivity}
               />
               <HistogramRangeInput
