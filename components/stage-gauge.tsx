@@ -281,8 +281,8 @@ export function OverallStageGauge(props: OverallStageGaugeProps) {
   const { scores, name } = props;
   const [activePillar, setActivePillar] = useState<Pillar>("Overall");
   const stageInfo = scores[activePillar]?.stage;
-  console.log("inner scores : ",scores)
-  console.log("inner activepilar : ",activePillar)
+  console.log("scores : ",scores)
+  console.log("activepilar : ",activePillar)
   let offset = 4;
   let size = 250;
   let ringSize = size / 4;
