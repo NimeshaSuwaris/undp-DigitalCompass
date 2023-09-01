@@ -70,7 +70,9 @@ async function main() {
           (!subpillar || d["Sub-Pillar"] === subpillar)
       ) || "";
     const stageInfo = definition[stageName];
-    if (!stageInfo) return null;
+    if (!stageInfo){
+      stageInfo == ""
+    };
     return {
       number: stage,
       name: stageName,
