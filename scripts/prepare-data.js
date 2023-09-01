@@ -177,7 +177,9 @@ async function main() {
     const stageInfo = definition[stageName];
     //console.log(stage)
     //console.log(stageName)
-    if (!stageInfo) return null;
+    if (!stageInfo){
+      stageInfo == ""
+    };
     return {
       number: stage,
       name: stageName,
